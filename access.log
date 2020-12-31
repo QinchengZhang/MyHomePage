@@ -95,3 +95,20 @@
 2020/12/31 14:15:13.057 [D] [server.go:2843]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/layui/lay/modules/element.js
 2020/12/31 14:15:13.242 [D] [server.go:2843]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/layui/tju.png
 2020/12/31 14:15:13.556 [D] [server.go:2843]  |            ::1|[42m 200 [0m|      998.2µs|   match|[44m GET     [0m /favicon.ico
+2020/12/31 14:45:08.415 [I] [asm_amd64.s:1374]  http server Running on http://:8080
+2020/12/31 14:45:08.437 [D] [server.go:2843]  |            ::1|[42m 200 [0m|     3.9891ms|   match|[44m GET     [0m /     r:/
+2020/12/31 14:45:08.488 [D] [server.go:2843]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/layui/css/layui.css
+2020/12/31 14:45:08.490 [D] [server.go:2843]  |            ::1|[47m 304 [0m|      995.5µs|   match|[44m GET     [0m /static/layui/layui.js
+2020/12/31 14:45:08.490 [D] [server.go:2843]  |            ::1|[47m 304 [0m|      995.5µs|   match|[44m GET     [0m /static/layui/jQuery.js
+2020/12/31 14:45:08.490 [D] [server.go:2843]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/layui/jQuerySession.js
+2020/12/31 14:45:08.490 [D] [server.go:2843]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/layui/jQuery.cookie.js
+2020/12/31 14:45:08.511 [D] [server.go:2843]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/layui/beian.png
+2020/12/31 14:45:08.527 [D] [server.go:2843]  |            ::1|[42m 200 [0m|     1.9937ms|   match|[44m GET     [0m /random   r:/random
+2020/12/31 14:45:08.576 [D] [server.go:2843]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/layui/lay/modules/element.js
+2020/12/31 14:45:08.592 [D] [server.go:2843]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /static/layui/font/iconfont.woff2
+2020/12/31 14:45:08.763 [D] [server.go:2843]  |            ::1|[47m 304 [0m|      997.4µs|   match|[44m GET     [0m /static/layui/tju.png
+2020/12/31 14:45:09.031 [D] [server.go:2843]  |            ::1|[42m 200 [0m|      997.7µs|   match|[44m GET     [0m /favicon.ico
+2020/12/31 14:45:10.289 [D] [server.go:2843]  |            ::1|[42m 200 [0m|     2.0248ms|   match|[44m GET     [0m /     r:/
+2020/12/31 14:45:10.328 [D] [server.go:2843]  |            ::1|[42m 200 [0m|      998.7µs|   match|[44m GET     [0m /random   r:/random
+2020/12/31 14:45:10.607 [D] [server.go:2843]  |            ::1|[42m 200 [0m|      996.8µs|   match|[44m GET     [0m /favicon.ico
+2020/12/31 14:45:11.856 [D] [server.go:2843]  |            ::1|[42m 200 [0m|      997.1µs|   match|[44m GET     [0m /location   r:/location
