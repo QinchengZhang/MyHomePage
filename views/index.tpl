@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-21 00:07:46
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-12-31 14:31:25
+ * @LastEditTime: 2020-12-31 14:44:48
 -->
 <!DOCTYPE html>
 <html>
@@ -186,7 +186,7 @@
       <div style="left: 0;" class="layui-body">
         <iframe
           class="layui-layer-iframe"
-          style="padding: 15px; width: 100%; height: 100%;"
+          style="width: 100%; height: 100%;"
           src="/random"
         ></iframe>
       </div>
