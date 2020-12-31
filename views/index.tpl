@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-21 00:07:46
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-07-01 23:31:42
+ * @LastEditTime: 2020-12-31 13:30:24
 -->
 <!DOCTYPE html>
 <html>
@@ -194,7 +194,7 @@
       <div style="left: 0;" class="layui-footer">
         <p onclick="window.open('http://www.beian.miit.gov.cn', '_blank');">
           Copyright &copy; 2017-{{.CurrentYear}}
-          TJUZQC 冀ICP备17015474号
+          TJUZQC 冀ICP备17015474-2号
         </p>
       </div>
     </div>

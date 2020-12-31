@@ -4,3 +4,6 @@
 *.exe
 *.tar.gz
 .idea
+.history
+.github
+.vscode
