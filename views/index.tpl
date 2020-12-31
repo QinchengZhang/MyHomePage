@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-21 00:07:46
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-12-31 13:30:24
+ * @LastEditTime: 2020-12-31 14:31:25
 -->
 <!DOCTYPE html>
 <html>
@@ -26,30 +26,30 @@
       src="/static/layui/jQuery.cookie.js"
     ></script>
     <script type="text/javascript">
-      function browserRedirect() {
-        var sUserAgent = navigator.userAgent.toLowerCase();
-        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-        var bIsAndroid = sUserAgent.match(/android/i) == "android";
-        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+      // function browserRedirect() {
+      //   var sUserAgent = navigator.userAgent.toLowerCase();
+      //   var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      //   var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      //   var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      //   var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      //   var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      //   var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      //   var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      //   var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 
-        if (
-          bIsIpad ||
-          bIsIphoneOs ||
-          bIsMidp ||
-          bIsUc7 ||
-          bIsUc ||
-          bIsAndroid ||
-          bIsCE ||
-          bIsWM
-        ) {
-          window.location.href = "https://www.tjuzqc.top/m"; //移动端网站
-        }
-      }
+      //   if (
+      //     bIsIpad ||
+      //     bIsIphoneOs ||
+      //     bIsMidp ||
+      //     bIsUc7 ||
+      //     bIsUc ||
+      //     bIsAndroid ||
+      //     bIsCE ||
+      //     bIsWM
+      //   ) {
+      //     window.location.href = "https://www.tjuzqc.top/m"; //移动端网站
+      //   }
+      // }
       function getLoginStatus() {
         var token = $.session.get("token");
         console.log(token);
@@ -192,9 +192,9 @@
       </div>
 
       <div style="left: 0;" class="layui-footer">
-        <p onclick="window.open('http://www.beian.miit.gov.cn', '_blank');">
-          Copyright &copy; 2017-{{.CurrentYear}}
-          TJUZQC 冀ICP备17015474-2号
+        <p onclick="window.open('https://beian.miit.gov.cn', '_blank');">
+          Copyright &copy; 2017-{{.CurrentYear}} TJUZQC
+          <img src="static\layui\beian.png" style="width: 20px;"> 冀ICP备17015474号-2
         </p>
       </div>
     </div>
