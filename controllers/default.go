@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-25 23:45:08
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-07-02 00:27:44
+ * @LastEditTime: 2021-01-05 15:33:31
  */
 package controllers
 
@@ -43,7 +43,7 @@ type WeatherData struct {
 
 type Result struct {
 	Status int
-	Data   string
+	Msg   string
 }
 
 func mobile(c BaseController) bool {

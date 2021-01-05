@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-25 23:45:08
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-06-29 16:59:04
+ * @LastEditTime: 2021-01-05 15:10:13
  */
 package routers
 
@@ -22,4 +22,5 @@ func init() {
 	beego.Router("/virus", &controllers.VirusController{})
 	beego.Router("/location", &controllers.LocationController{})
 	beego.Router("/user/login", &controllers.UserController{}, "post:Login")
+	beego.Router("/git/pull", &controllers.GitController{}, "get:Pull")
 }
