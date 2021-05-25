@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-21 15:50:16
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-05-21 16:10:05
+ * @LastEditTime: 2021-05-25 15:50:00
 -->
 <!DOCTYPE html>
 <html>
@@ -29,10 +29,7 @@
     <title>查看浏览器信息</title>
 </head>
 <body style="text-align: center;">
-<div class="layui-main">
-    <h1 class="site-h1" style="text-align: center;" id="name">
-        查看浏览器信息
-    </h1>
+<div class="layui-main" style="margin-top: 30px;">
     <section class="layui-form layui-form-pane" style="text-align: center;">
         <div class="layui-form-item">
             <div class="layui-inline">

@@ -2,7 +2,7 @@
  * @Author: TJUZQC
  * @Date: 2021-01-05 15:04:34
  * @LastEditors: TJUZQC
- * @LastEditTime: 2021-01-05 15:34:43
+ * @LastEditTime: 2021-05-23 11:00:43
  * @Description: None
  */
 package controllers
@@ -50,6 +50,6 @@ func (c *GitController) Pull() {
 	fmt.Println("executing git pull")
 	params := []string{"pull"}
 	execCommand("git", params)
-	c.Data["json"] = &Result{1, "pull success"}
+	c.Data["json"] = &TranslateResult{true, "pull success"}
 	c.ServeJSON()
 }

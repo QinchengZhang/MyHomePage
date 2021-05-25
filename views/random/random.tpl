@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-21 00:07:46
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-05-21 15:29:01
+ * @LastEditTime: 2021-05-25 15:50:44
 -->
 <!DOCTYPE html>
 <html>
@@ -38,10 +38,7 @@
   </head>
 
   <body style="text-align: center;">
-    <h1 class="site-h1" style="text-align: center;" id="name">
-      生成一个随机数
-    </h1>
-    <section class="layui-form layui-form-pane" style="text-align: center;">
+    <section class="layui-form layui-form-pane" style="text-align: center;margin-top: 30px;">
       <div class="layui-form-item">
         <div class="layui-inline">
           <label class="layui-form-label">范围</label>

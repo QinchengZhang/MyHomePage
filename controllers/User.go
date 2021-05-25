@@ -1,24 +1,24 @@
 /*
- * @Description: 
+ * @Description:
  * @Autor: TJUZQC
  * @Date: 2020-06-29 16:42:03
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-06-29 19:49:36
- */ 
+ * @LastEditTime: 2021-05-23 09:44:55
+ */
 package controllers
 
 import (
-	"github.com/astaxie/beego"
+	"github.com/beego/beego/v2/server/web"
 )
 
-type UserController struct{
-	beego.Controller
+type UserController struct {
+	web.Controller
 }
 
-type User struct{
-	Username string `json:"username"`
-	Password string `json:"password"`
-	Token string `json:"token"`
+type User struct {
+	Username   string `json:"username"`
+	Password   string `json:"password"`
+	Token      string `json:"token"`
 	AvatarPath string `json:"avatarpath"`
 }
 

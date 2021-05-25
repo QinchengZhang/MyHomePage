@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-21 00:07:46
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-05-21 16:06:00
+ * @LastEditTime: 2021-05-25 15:57:57
 -->
 <!DOCTYPE html>
 <html>
@@ -16,18 +16,14 @@
     <script type="text/javascript" src="/static/layui/jQuery.js"></script>
     <script type="text/javascript">
         $(function () {
+            $.ajaxSettings.timeout='3000';
             // 开始写 jQuery 代码...
             layui.use(["form", "layer"], function () {
-                $("#to").text($("#language").val());
                 var form = layui.form;
                 var layer = layui.layer;
-                form.on("select(language)", function (data) {
-                    $("#to").text(data.value);
-                    // console.log($("#to").text());
-                });
                 $("#submit").click(function () {
                     $query = $("#query").val();
-                    $to = $("#to").text().split('·')[0];
+                    $to = $("#language").val().split('·')[0];
                     if($query == '' || $to == ''){
                         layer.msg("不能为空！", { time: 30 });
                         return;
@@ -37,9 +33,10 @@
                     $.post(
                         "/translate",
                         $post_data,
-                        function (data, status) {
-                            if (status == "success" && data.Status == 1) {
-                                result = JSON.parse(data.Data);
+                        function (data) {
+                            if (data.status == true) {
+                                result = jQuery.parseJSON(data.result);
+                                console.log(result)
                                 $("#result").val(result.trans_result[0].dst);
                             } else {
                                 layer.msg("翻译出错！", { time: 30 });
@@ -53,10 +50,7 @@
 </head>
 
 <body>
-<h1 class="site-h1" style="text-align: center;" id="name">
-    QC翻译
-</h1>
-<div class="layui-main" style="text-align: center;">
+<div class="layui-main" style="text-align: center;margin-top: 30px;">
     <section class="layui-form layui-form-pane">
         <div class="layui-form-item">
             <div class="layui-inline">
@@ -75,8 +69,7 @@
         <div class="layui-form-item" >
             <div class="layui-inline">
                 <label class="layui-form-label">翻译为</label>
-                <div id="to" hidden="true"></div>
-                <div class="layui-input-block">
+                <div class="layui-input-inline">
                     <select id="language" lay-verify="required" lay-filter="language">
                         <option value="zh·中文">中文</option>
                         <option value="en·英文" selected="selected">英文</option>
@@ -120,7 +113,7 @@
                             autocomplete="off"
                             class="layui-input"
                             disabled="true"
-                            style="text-align: center;"
+                            style="text-align: left;"
                     />
                 </div>
             </div>

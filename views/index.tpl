@@ -3,7 +3,7 @@
  * @Autor: TJUZQC
  * @Date: 2020-05-21 00:07:46
  * @LastEditors: TJUZQC
- * @LastEditTime: 2020-12-31 14:44:48
+ * @LastEditTime: 2021-05-25 15:52:11
 -->
 <!DOCTYPE html>
 <html>
@@ -161,8 +161,8 @@
         <ul class="layui-nav layui-layout-left" lay-filter="navigator">
           <li class="layui-nav-item layui-this"><a id="random">随机数</a></li>
           <li class="layui-nav-item"><a id="weather">QC天气</a></li>
-          <li class="layui-nav-item"><a id="virus">疫情数据</a></li>
           <li class="layui-nav-item"><a id="translate">QC翻译</a></li>
+          <li class="layui-nav-item"><a id="wordsconverter">单词格式转换器</a></li>
           <li class="layui-nav-item"><a id="browserinfo">浏览器信息</a></li>
           <li class="layui-nav-item"><a id="location">定位</a></li>
         </ul>
